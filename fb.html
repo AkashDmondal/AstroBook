@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <title>Gamification</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/> 
+        <script src="Script/fb.js">
+
+		</script>
+        
+    </head>
+    <body> 
+    <div class="header">
+  <img src="images/ABlogo.jpg" class="logo" height="150px" width="150px" alt="logo" align="left">
+        <a href="#" class="name">ASTROBOOK</a>
+        
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="turf.html">Turfs</a>
+      <a  href="gallery.html">Gallery</a>
+	  <a class="currentPage" href="#">Gamification</a>
+	  <a href="currentevents.html">Current Events</a>
+	  <a href="#">Login</a>
+  </div>
+</div>
+        
+		 <style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],[type=number], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize:noresize;
+}
+
+label {
+    padding: 12px 10px;
+    display: inline-block;
+	background-color: grey;
+    color: Blue;
+	border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+	
+}h1 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+input[type=submit] {
+    background-color: grey;
+    color: blue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+	
+}
+input[type=reset] {
+    background-color: grey;
+    color: blue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+	
+}	
+
+input[type=submit]:hover {
+    background-color:grey
+}
+
+.container {
+    border-radius: 15px;
+    background-color: steelgrey;
+    padding: 30px;
+}
+
+.col-30 {
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.col-70 {
+    float: left;
+    width: 60%;
+    margin-top: 10px;
+}
+div {
+    background-color: grey;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.centerbutton{
+text-align:center;
+}
+
+
+</style>
+</head>
+<body>
+<form name="myForm" action="abc.html" onsubmit="validate()">
+
+<h1>Give Your FeedBack and Improve your performance</h1>
+<p></p>
+
+<div class="container">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Team Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Team Name" onkeyup="toup()">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Tournament   Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="tname" name="tname" placeholder="Tournament Name" onkeyup="toUp()">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="lname">Turf Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Tname" name="Tname" placeholder="Turf Name" onkeyup="toUpper()">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="lname">Team Nick Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="TNname" name="TNname" placeholder="Team Nick Name" onfocus="myFunction(this)">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-30">
+        <label for="lname">Phone Number</label>
+      </div>
+      <div class="col-70">
+        <input type="number" id="" name="number" placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="State">City</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Karnataka</option>
+          <option value="canada">Tamilnadu</option>
+          <option value="usa">Kerala</option>
+		  <option value="canada">Andhra Pradesh</option>
+		  <option value="canada">Mumbai</option>
+		  <option value="canada">Madhya Pradesh</option>
+		  <option value="canada">Bihar</option>
+		  <option value="canada">UP</option>
+		  <option value="canada">Arunchal Pradesh</option>
+		   <option value="canada">Manipur</option>
+		    <option value="canada">Nagaland</option>
+			 <option value="canada">Mizoram</option>
+			  <option value="canada">Assam</option>
+			   <option value="canada">West Bengal</option>
+			    <option value="canada">Tripura</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject"> Ratings for  Own Team</label>
+      </div>
+      <div class="col-75">
+        <textarea id="address" name="address" placeholder="Own Team" style="height:150px" ></textarea>
+      </div>
+    </div>
+	 <div class="row">
+      <div class="col-25">
+        <label for="subject"> Opponent Team</label>
+      </div>
+      <div class="col-75">
+        <textarea id="address" name="address" placeholder="Opponent Team" style="height:150px"></textarea>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="subject"> FeedBack or Other Views </label>
+      </div>
+      <div class="col-75">
+        <textarea id="address" name="feedback" placeholder="Your Views on our services.." style="height:150px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+	<br>
+	<script>
+	function propmtbox()
+	{
+	var txt;
+	var ratings=prompt("Enter from 0-10");
+	if(ratings == null || ratings==" " || ratings <=5)
+	{
+	  txt = "Thank you for your feedback. We will try our best to improvise";
+	}
+	else
+	{
+	  txt = "You rated us" +ratings+ "/10, We really appreciate your feedback";
+	}
+	 document.getElementById("rating").innerHTML = txt;
+	}
+	</script>
+	<div class="centerbutton">
+	<input type="button" value="Rating" onClick="return propmtbox()">
+	
+	</div>
+	
+	<p id="rating"></p>
+	
+		      <div class="col-30">
+      <button type="submit">Submit</button>
+		</div>
+		
+    </div>
+	<div class="row">
+		      <div class="col-70">
+      <button type="reset" onClick="return confirmm()">Reset</button>
+		</div>
+		
+    </div>
+  </form>
+</div>
+</body>
+</html>

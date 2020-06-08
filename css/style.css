@@ -1,0 +1,109 @@
+.header {
+    overflow: auto;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header a:hover {
+  background-color: #808080;
+  color: navyblue;
+    border-bottom:5px solid red;
+}
+
+.header a.name {
+    padding-left: 5%;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.header a.currentPage {
+  background-color: #FFA07A;
+  color: white;
+}
+
+.header-right {
+    float: right;
+    padding-right: 30px;
+    padding-top:1%;
+}
+
+.services{
+    padding-left: 20px;
+}
+
+.form-textbox {
+    margin: 5px;
+    height: 45px;
+    width: 300px;
+    font-size: 20px;
+}
+.form-textarea {
+    margin: 5px;
+    font-size: 20px;
+}
+.form-submitbutton {
+    background-color:0000CD;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.right{
+    float: right;
+    text-align: left;
+    margin: 30px 40px;
+}
+.left{
+    float: left;
+    width: 125px;
+    text-align: left;
+    margin: 2px 10px;
+}
+.servicesheading{
+    text-align: center;
+    color: dodgerblue;
+}
+.servicesleftimage{
+    margin-top:3%; 
+    margin-left: 4%; 
+    float: left;
+}
+.servicesrightimage{
+    margin-top:3%; 
+    margin-right: 4%; 
+    float: right;
+    margin-left: 4%;
+}
+.servicesrighttext{
+    height: 200px;
+    width:55%;
+    float: right;
+    text-align: justify;
+    margin-top: 2%;
+    margin-right: 4%;
+}
+.serviceslefttext{
+    height: 200px;
+    width:55%;
+    float: left;
+    text-align: justify;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+ul li{
+    font-size: 20px;
+    margin: 10px;
+}
